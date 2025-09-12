@@ -13,7 +13,6 @@ RUN apt-get update && \
         nano \
     && rm -rf /var/lib/apt/lists/*
 
-# Явно указываем QEMU для 64-битной системы
 RUN ln -sf /usr/bin/qemu-system-x86_64 /usr/bin/qemu
 
 COPY ./pintos /pintos
